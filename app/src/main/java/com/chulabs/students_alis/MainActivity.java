@@ -69,4 +69,14 @@ public class MainActivity extends AppCompatActivity {
         super.onStop();
         isRunning = false;
     }
+
+    public void onGrpBtnClick(View view){
+        Spinner spinner = (Spinner) findViewById(R.id.spinner);
+        String grpNumb = (String) spinner.getSelectedItem();
+
+        Intent intent = new Intent(this, StudentsGroupActivity_Alis.class);
+        intent.putExtra(StudentsListActivity_Alis.GROUP_NUMBER, grpNumb);
+
+        startActivity(intent);
+    }
 }

@@ -18,14 +18,14 @@ public class Student {
     }
     private final static ArrayList<Student> students = new ArrayList<Student>(
             Arrays.asList(
-                    new Student ("Алісова Ксенія", "301"),
-                    new Student ("Єрмолінський Данііл", "301"),
-                    new Student ("Зайцев Володимир", "302"),
-                    new Student ("Петренко Сергій", "302"),
-                    new Student ("Пирогов Владислав", "308"),
-                    new Student ("Погорілий Дмитро", "308"),
-                    new Student ("Полеводін Євгеній", "309"),
-                    new Student ("Решетник Катерина", "309")
+                    new Student ("Алісова Ксенія", "ІПЗ19-1"),
+                    new Student ("Єрмолінський Данііл", "ІПЗ19-1"),
+                    new Student ("Зайцев Володимир", "ІПЗ19-2"),
+                    new Student ("Петренко Сергій", "ІПЗ19-2"),
+                    new Student ("Пирогов Владислав", "К19-1"),
+                    new Student ("Погорілий Дмитро", "К19-1"),
+                    new Student ("Полеводін Євгеній", "К19-2"),
+                    new Student ("Решетник Катерина", "К19-2")
             )
     );
     public static  ArrayList<Student> getStudents(String groupNamber){

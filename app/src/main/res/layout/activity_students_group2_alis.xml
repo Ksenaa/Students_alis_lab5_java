@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_constraintWidth_percent="0.4"
+    tools:context=".StudentsGroupActivity_Alis">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="0dp"
+        android:layout_height="256dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="473dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.785"
+        app:srcCompat="@drawable/group" />
+
+    <TextView
+        android:id="@+id/grpNumberImageTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="12dp"
+        android:text="Група"
+        android:textSize="@dimen/default_padding"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="@+id/imageView" />
+
+    <TextView
+        android:id="@+id/facultyNameImageTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Факультет"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="@+id/imageView" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/grp_number_txt"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <EditText
+        android:id="@+id/grpNumberEdit"
+        android:layout_width="281dp"
+        android:layout_height="39dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toEndOf="@+id/textView6"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Факультет"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/grpNumberEdit" />
+
+    <EditText
+        android:id="@+id/facultyEdit"
+        android:layout_width="388dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="104dp"
+        android:layout_height="21dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Рівень освіти"
+        android:textSize="@dimen/default_padding"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/facultyEdit" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup2"
+        android:layout_width="289dp"
+        android:layout_height="100dp"
+        app:layout_constraintStart_toEndOf="@+id/textView8"
+        app:layout_constraintTop_toTopOf="@+id/textView8">
+
+        <RadioButton
+            android:id="@+id/edu_level_bachelor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/edu_level_bachelor_txt" />
+
+        <RadioButton
+            android:id="@+id/edu_level_master"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/edu_level_master_txt" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="94dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Додаткові відомості"
+        android:textSize="@dimen/default_padding"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup2"
+        app:layout_constraintWidth_percent="0.3" />
+
+    <CheckBox
+        android:id="@+id/contract_flg"
+        android:layout_width="272dp"
+        android:layout_height="45dp"
+        android:text="@string/contract_flg_txt"
+        app:layout_constraintStart_toEndOf="@+id/textView9"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup2" />
+
+    <CheckBox
+        android:id="@+id/privilege_flg"
+        android:layout_width="292dp"
+        android:layout_height="wrap_content"
+        android:text="@string/privilege_flg_txt"
+        app:layout_constraintStart_toEndOf="@+id/textView9"
+        app:layout_constraintTop_toBottomOf="@+id/contract_flg" />
+
+    <Button
+        android:id="@+id/btnOk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:onClick="onOkBntClick"
+        android:text="@string/btn_ok_txt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/privilege_flg" />
+</androidx.constraintlayout.widget.ConstraintLayout>
