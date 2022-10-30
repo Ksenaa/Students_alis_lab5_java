@@ -78,6 +78,14 @@ public class StudentsGroupActivity_Alis extends AppCompatActivity {
             outString += ", пільговиків нема";
         }
         Toast.makeText(this, outString, Toast.LENGTH_LONG).show();
+    }
+    public void onBtnStudListClick(View view){
+        Intent localIntent = getIntent();
 
+        String group = localIntent.getStringExtra(GROUP_NUMBER);
+
+        Intent newIntent = new Intent(this, StudentsListActivity_Alis.class);
+        newIntent.putExtra(StudentsListActivity_Alis.GROUP_NUMBER, group);
+        startActivity(newIntent);
     }
 }

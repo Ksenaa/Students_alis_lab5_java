@@ -37,12 +37,11 @@ public class StudentsGroup {
 
     public boolean isPrivilageExistsFlg(){ return privilageExistsFlg;
     }
-    private final static ArrayList<StudentsGroup> groups = new ArrayList<StudentsGroup>(
+    private static ArrayList<StudentsGroup> groups = new ArrayList<StudentsGroup>(
             Arrays.asList(
                     new StudentsGroup("ІПЗ19-1", "Інноваційнх технологій", 0, true, false),
                     new StudentsGroup("ІПЗ19-2", "Інноваційнх технологій", 0, true, false),
                     new StudentsGroup("К19-1", "Інноваційнх технологій", 0, true, false),
-                    new StudentsGroup("К19-2", "Інноваційнх технологій", 0, true, false),
                     new StudentsGroup("ІПЗ22м", "Інноваційнх технологій", 1, false, true)
             )
     );
@@ -55,4 +54,14 @@ public class StudentsGroup {
         }
         return null;
     }
+
+    public static ArrayList<StudentsGroup> getGroups(){
+        return groups;
+    }
+    @Override
+    public String toString(){
+        return number;
+    }
+
+    public static void addGroup(StudentsGroup group) {groups.add(group);}
 }

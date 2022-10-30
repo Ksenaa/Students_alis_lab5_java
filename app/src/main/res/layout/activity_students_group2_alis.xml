@@ -28,8 +28,8 @@
         android:id="@+id/grpNumberImageTxt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="12dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="32dp"
         android:text="Група"
         android:textSize="@dimen/default_padding"
         app:layout_constraintEnd_toEndOf="@+id/imageView"
@@ -155,5 +155,16 @@
         android:onClick="onOkBntClick"
         android:text="@string/btn_ok_txt"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/privilege_flg" />
+
+    <Button
+        android:id="@+id/btnStudList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:onClick="onBtnStudListClick"
+        android:text="@string/default_text"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/privilege_flg" />
 </androidx.constraintlayout.widget.ConstraintLayout>
