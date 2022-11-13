@@ -28,10 +28,13 @@ public class Student {
                     new Student ("Решетник Катерина", "К19-2")
             )
     );
+    public static ArrayList<Student> getStudents() {
+        return getStudents("");
+    }
     public static  ArrayList<Student> getStudents(String groupNamber){
         ArrayList<Student> stList = new ArrayList<>();
         for(Student s: students) {
-            if (s.getGroupNamber().equals(groupNamber)){
+            if (s.getGroupNamber().equals(groupNamber) || (groupNamber == "")){
                 stList.add(s);
             }
         }

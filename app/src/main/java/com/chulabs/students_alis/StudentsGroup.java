@@ -5,19 +5,27 @@ import java.util.ArrayList;
 import java.util.Arrays;
 
 public class StudentsGroup {
+    private int id;
     private String number;
     private String facultyName;
     private int educationLevel;
     private boolean contractExistsFlg;
     private boolean privilageExistsFlg;
 
-    public StudentsGroup(String number, String facultyName, int educationLevel, boolean contractExistsFlg, boolean privilageExistsFlg){
+
+    public StudentsGroup(int id, String number, String facultyName, int educationLevel, boolean contractExistsFlg, boolean privilageExistsFlg){
         this.number = number;
         this.facultyName = facultyName;
         this.educationLevel = educationLevel;
         this.contractExistsFlg = contractExistsFlg;
         this.privilageExistsFlg = privilageExistsFlg;
+        this.id = id;
     }
+    public StudentsGroup(String number, String facultyName,int educationLevel,
+                         boolean contractExistsFlg,boolean privilageExistsFlg){
+    }
+
+    public int getId() {return  this.id; }
 
     public String getNumber() {
         return number;

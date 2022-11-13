@@ -167,4 +167,14 @@
         android:text="@string/default_text"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/privilege_flg" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="84dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="4dp"
+        android:text="Вид"
+        app:layout_constraintStart_toEndOf="@+id/btnStudList"
+        app:layout_constraintTop_toTopOf="@+id/btnStudList" />
 </androidx.constraintlayout.widget.ConstraintLayout>
